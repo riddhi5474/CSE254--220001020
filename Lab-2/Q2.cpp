@@ -21,6 +21,26 @@ void sort(vector<int> &a, int m){
     }
 }
 
+void merge(vector<int> a,int l,int m,int r){
+    int i=l;
+    int j=m;
+    while(j<=r){
+        if(a[i]<a[j]){
+            i++;
+        }else{
+            int temp=a[j];
+            int k=j;
+            while(i<k){
+                a[k]=a[k-1];
+                k--;
+            }
+            a[i]=temp;
+            i++;
+            j++;
+        }
+    }
+}
+
 // We can also use the following O(n) solution if there elements in the array are in the range [1, 10^9]
 void lsort(vector<long long> &a, int m){
     int n = a.size();
