@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    freopen("test_cases_Q3.txt","r",stdin);
-    freopen("output_Q3.txt","w",stdout);
+    // freopen("test_cases_Q3.txt","r",stdin);
+    // freopen("output_Q3.txt","w",stdout);
     int t; cin >> t;
     while(t--){
         int n, k; cin >> n >> k;
