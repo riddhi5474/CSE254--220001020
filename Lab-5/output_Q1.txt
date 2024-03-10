@@ -1,0 +1,7 @@
+Size of the largest Region: 8
+Size of the largest Region: 0
+Size of the largest Region: 0
+Size of the largest Region: 0
+Size of the largest Region: 1
+Size of the largest Region: 0
+Size of the largest Region: 1

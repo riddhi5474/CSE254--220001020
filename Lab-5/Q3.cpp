@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+// A Clique is a subgraph of a graph such that all vertices in the subgraph are completely connected
+
+
 bool isBipartite(vector<vector<int>> graph)
 {
     int n = graph.size();
@@ -25,6 +29,8 @@ bool isBipartite(vector<vector<int>> graph)
     }
     return true;
 }
+//O(V^2) time....
+//O(n) color vector, queue for bfs
 
 bool canBeDividedinTwoCliques(vector<vector<int>> graph){
     int n=graph.size();
@@ -41,16 +47,27 @@ bool canBeDividedinTwoCliques(vector<vector<int>> graph){
 
 int main()
 {
-
     vector<vector<int>> graph = {{0, 0, 0, 1},
         {0, 0, 1, 0},
         {0, 1, 0, 1},
         {1, 0, 1, 0}};
 
-    if(canBeDividedinTwoCliques(graph)){
-        cout<<"Yes";
-    }else{
-        cout<<"No";
-    }
+    cout << (canBeDividedinTwoCliques(graph) ? "Yes" : "No") << endl;
     return 0;
 }
+    // freopen("test_cases_Q3.txt","r",stdin);
+    // freopen("output_Q3.txt","w",stdout);
+    // int t; cin >> t;
+    // while(t--){
+    //     int n;
+    //     cin >> n;
+    //     vector<vector<int>> adj(n, vector<int>(n));
+    //     for(int i=0; i<n; i++){
+    //         for(int j=0; j<n; j++){
+    //             int c; cin >> c;
+    //             adj[i][j] = !c;
+    //         }
+    //     }
+    //     cout<<canBeDividedinTwoCliques(adj);
+
+    //     }
